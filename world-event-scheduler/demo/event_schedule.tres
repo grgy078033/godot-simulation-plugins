@@ -1,0 +1,40 @@
+[gd_resource type="Resource" script_class="EventSchedule" load_steps=6 format=3]
+
+[ext_resource type="Script" path="res://addons/world_event_scheduler/event_schedule.gd" id="1_schedule"]
+[ext_resource type="Script" path="res://addons/world_event_scheduler/scheduled_event.gd" id="2_event"]
+
+[sub_resource type="Resource" id="ShopOpen"]
+script = ExtResource("2_event")
+event_id = &"shop_open"
+start_hour = 8
+start_minute = 0
+end_hour = 18
+end_minute = 0
+
+[sub_resource type="Resource" id="StreetLights"]
+script = ExtResource("2_event")
+event_id = &"street_lights"
+start_hour = 18
+start_minute = 0
+end_hour = 6
+end_minute = 0
+
+[sub_resource type="Resource" id="TavernMusic"]
+script = ExtResource("2_event")
+event_id = &"tavern_music"
+start_hour = 20
+start_minute = 0
+end_hour = 23
+end_minute = 0
+
+[sub_resource type="Resource" id="GhostSpawn"]
+script = ExtResource("2_event")
+event_id = &"ghost_spawn"
+start_hour = 22
+start_minute = 0
+end_hour = 5
+end_minute = 0
+
+[resource]
+script = ExtResource("1_schedule")
+events = Array[ExtResource("2_event")]([SubResource("ShopOpen"), SubResource("StreetLights"), SubResource("TavernMusic"), SubResource("GhostSpawn")])

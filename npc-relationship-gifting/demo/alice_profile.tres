@@ -1,0 +1,61 @@
+[gd_resource type="Resource" script_class="RelationshipProfile" load_steps=11 format=3]
+
+[ext_resource type="Script" path="res://addons/npc_relationship_gifting/relationship_profile.gd" id="1_profile"]
+[ext_resource type="Script" path="res://addons/npc_relationship_gifting/gift_preference.gd" id="2_preference"]
+[ext_resource type="Script" path="res://addons/npc_relationship_gifting/relationship_level.gd" id="3_level"]
+
+[sub_resource type="Resource" id="GiftCoffee"]
+script = ExtResource("2_preference")
+item_id = &"coffee"
+reaction = 0
+relationship_change = 50
+
+[sub_resource type="Resource" id="GiftCake"]
+script = ExtResource("2_preference")
+item_id = &"cake"
+reaction = 1
+relationship_change = 20
+
+[sub_resource type="Resource" id="GiftTrash"]
+script = ExtResource("2_preference")
+item_id = &"trash"
+reaction = 4
+relationship_change = -40
+
+[sub_resource type="Resource" id="LevelStranger"]
+script = ExtResource("3_level")
+minimum_points = 0
+level_id = &"stranger"
+display_name = "Stranger"
+
+[sub_resource type="Resource" id="LevelAcquaintance"]
+script = ExtResource("3_level")
+minimum_points = 200
+level_id = &"acquaintance"
+display_name = "Acquaintance"
+
+[sub_resource type="Resource" id="LevelFriend"]
+script = ExtResource("3_level")
+minimum_points = 400
+level_id = &"friend"
+display_name = "Friend"
+
+[sub_resource type="Resource" id="LevelCloseFriend"]
+script = ExtResource("3_level")
+minimum_points = 600
+level_id = &"close_friend"
+display_name = "Close Friend"
+
+[sub_resource type="Resource" id="LevelBestFriend"]
+script = ExtResource("3_level")
+minimum_points = 800
+level_id = &"best_friend"
+display_name = "Best Friend"
+
+[resource]
+script = ExtResource("1_profile")
+npc_id = &"alice"
+minimum_points = 0
+maximum_points = 1000
+gift_preferences = Array[ExtResource("2_preference")]([SubResource("GiftCoffee"), SubResource("GiftCake"), SubResource("GiftTrash")])
+levels = Array[ExtResource("3_level")]([SubResource("LevelStranger"), SubResource("LevelAcquaintance"), SubResource("LevelFriend"), SubResource("LevelCloseFriend"), SubResource("LevelBestFriend")])

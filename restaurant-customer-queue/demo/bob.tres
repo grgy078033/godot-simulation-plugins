@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="RestaurantCustomer" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/restaurant_customer_queue/restaurant_customer.gd" id="1_customer"]
+
+[resource]
+script = ExtResource("1_customer")
+customer_id = &"bob"
+party_size = 4
+state = 0
+waiting_time = 0.0

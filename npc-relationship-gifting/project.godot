@@ -1,0 +1,22 @@
+; Engine configuration file.
+; Godot Simulation Systems — NPC Relationship & Gifting System
+config_version=5
+
+[application]
+
+config/name="NPC Relationship & Gifting System"
+run/main_scene="res://demo/demo.tscn"
+config/features=PackedStringArray("4.7", "GL Compatibility")
+config/icon="res://icon.svg"
+
+[display]
+
+window/size/viewport_width=1100
+window/size/viewport_height=700
+window/stretch/mode="canvas_items"
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+environment/defaults/default_clear_color=Color(0.045, 0.065, 0.1, 1)

@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="FreshnessProfile" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/food_freshness/freshness_profile.gd" id="1_profile"]
+
+[resource]
+script = ExtResource("1_profile")
+fresh_duration = 3
+stale_duration = 2

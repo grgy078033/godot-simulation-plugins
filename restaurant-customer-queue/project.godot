@@ -1,0 +1,26 @@
+; Engine configuration file.
+; Godot Simulation Systems — Restaurant Customer Queue System
+config_version=5
+
+[application]
+
+config/name="Restaurant Customer Queue System"
+run/main_scene="res://demo/demo.tscn"
+config/features=PackedStringArray("4.7", "GL Compatibility")
+config/icon="res://icon.svg"
+
+[debug]
+
+gdscript/warnings/treat_warnings_as_errors=true
+
+[display]
+
+window/size/viewport_width=1100
+window/size/viewport_height=700
+window/stretch/mode="canvas_items"
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+environment/defaults/default_clear_color=Color(0.045, 0.065, 0.1, 1)

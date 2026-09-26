@@ -1,0 +1,32 @@
+[gd_resource type="Resource" script_class="NPCSchedule" load_steps=7 format=3]
+
+[ext_resource type="Script" path="res://addons/npc_routine_scheduler/npc_schedule.gd" id="1"]
+[ext_resource type="Script" path="res://addons/npc_routine_scheduler/schedule_entry.gd" id="2"]
+
+[sub_resource type="Resource" id="Sleep"]
+script = ExtResource("2")
+hour = 0
+location_id = &"Home"
+activity = &"Sleeping"
+
+[sub_resource type="Resource" id="Work"]
+script = ExtResource("2")
+hour = 9
+location_id = &"Shop"
+activity = &"Working"
+
+[sub_resource type="Resource" id="Dinner"]
+script = ExtResource("2")
+hour = 18
+location_id = &"Home"
+activity = &"Dinner"
+
+[sub_resource type="Resource" id="Relax"]
+script = ExtResource("2")
+hour = 21
+location_id = &"Tavern"
+activity = &"Relaxing"
+
+[resource]
+script = ExtResource("1")
+entries = Array[ExtResource("2")]([SubResource("Sleep"), SubResource("Work"), SubResource("Dinner"), SubResource("Relax")])
