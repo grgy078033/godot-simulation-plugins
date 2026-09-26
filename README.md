@@ -34,6 +34,13 @@ Keep the MIT notice with redistributed copies/substantial portions of the softwa
 
 No required Autoload, third-party runtime dependency or editor-plugin activation. No movement, navigation, save system, inventory or networking is included.
 
+## Tutorial and walkthrough
+
+- **[Daily NPC routines without tying them to movement](guides/daily-npc-routines.md)** — handle schedule transitions, midnight wrap and next-entry queries.
+- **[Download the captioned 30-second demo (MP4)](https://raw.githubusercontent.com/grgy078033/godot-simulation-plugins/main/media/routine-daily-life-30s.mp4)** — silent, 1280×720, with real demo footage.
+
+The guide, video, covers and GIFs are hosted in this repository alongside the source; no separate marketing repository is required.
+
 ## See the demos
 
 <details><summary>NPC Routine Scheduler</summary>
@@ -86,4 +93,4 @@ AI-assisted code, documentation and simple graphics were used during development
 
 Open a [GitHub issue](https://github.com/grgy078033/godot-simulation-plugins/issues) with the plugin name, Godot version and a minimal reproduction. Do not include credentials, personal data or unrelated private game files. See [CONTRIBUTING.md](CONTRIBUTING.md) before making changes.
 
-The older [Godot Simulation Systems landing page](https://github.com/grgy078033/godot-simulation-systems) remains a discovery link; this repository is the home for source and contributions.
+This is the single home for source, documentation, tutorials, demo media, issues and contributions. Please share this repository so feedback and Stars stay together.
